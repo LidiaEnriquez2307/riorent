@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="riorent.Views.LoginPage"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}"
+             Title="Login">
+             
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout
+            Padding="10,20,10,20">
+                <Label Text="RIORENT"
+                   FontSize="Large"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   
+            />
+                <Image Source="casa"
+                   WidthRequest="200">
+                </Image>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="2*"/>
+                    </Grid.ColumnDefinitions>
+                </Grid>
+                <Label 
+                 Grid.Row="0"
+                Grid.Column="0"
+                FontSize="14"
+                 
+                  Text="E-mail">
+                </Label>
+                <Entry
+                    
+                    Keyboard="Email"
+                    
+                    Placeholder="Enter your email...">
+                </Entry>
+                <Label Text="Password" />
+                <Entry
+                    IsPassword="True"
+                    Placeholder="Enter your password...">
+
+                </Entry>
+                <StackLayout Orientation="Horizontal">
+
+                    <Label 
+                    HorizontalOptions="StartAndExpand"   
+                    Text="Rememberme in this device"
+                       VerticalOptions="Center"></Label>
+                    <Switch HorizontalOptions="End">
+
+                    </Switch>
+                </StackLayout>
+
+
+                <ActivityIndicator>
+
+                </ActivityIndicator>
+                <StackLayout Margin="40,0">
+                    <Button
+                BorderRadius ="23"
+                Text="Login" 
+                HeightRequest="46"
+                Background="Navy"
+                TextColor="White">
+                    </Button>
+
+                    <Button
+                BorderRadius ="23"
+                Text="Register" 
+                HeightRequest="46"
+                Background="Purple"
+                TextColor="White">
+                    </Button>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="Center">
+                    <Image 
+                    Source="facebook"
+                    WidthRequest="100">
+
+                    </Image>
+                </StackLayout>
+
+
+
+
+            </StackLayout>
+
+        </ScrollView>
+     
+    </ContentPage.Content>
+</ContentPage>
