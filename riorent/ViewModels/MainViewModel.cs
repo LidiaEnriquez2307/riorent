@@ -6,5 +6,22 @@ namespace riorent.ViewModels
 {
    public class MainViewModel
     {
+        #region
+
+        public LoginViewModel Login
+        {
+            get;
+            set;
+
+        }
+
+        #endregion
+
+        #region
+        public MainViewModel()
+        {
+            this.Login = new LoginViewModel();
+        }
+        #endregion
     }
 }
